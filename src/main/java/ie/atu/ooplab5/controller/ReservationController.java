@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/reservation")
-public class ReservationController {
+public class  ReservationController {
 
     private final ReservationService reservationService;
 
