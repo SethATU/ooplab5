@@ -30,6 +30,12 @@ public class GlobalExceptionHandler {
 
         return  new ResponseEntity<>(ex.getMessage(), HttpStatus.CONFLICT);
     }
+
+    @ExceptionHandler(ReservationNotFoundException.class)
+    public ResponseEntity<String> handleConflict(ReservationNotFoundException ex){
+
+        return  new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
 }
 
 
